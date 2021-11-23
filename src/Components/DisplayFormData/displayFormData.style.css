@@ -1,0 +1,42 @@
+.display-data {
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: left;
+  }
+  .employee {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    line-height: 1.25rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 1rem;
+    opacity: 0.5;
+  }
+  .employee-number {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .employee-item {
+    width: 100%;
+    padding: 2px 0;
+    display: flex;
+  }
+  .employee-contact-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-info {
+    display: flex;
+  }
+  .employee-label {
+    margin-right: 0.3rem;
+    font-size: 1.1rem;
+  }
+  .no-data {
+    margin: 20px auto;
+    text-align: center;
+    opacity: 0.5;
+  }
+  

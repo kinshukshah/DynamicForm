@@ -1,0 +1,22 @@
+.skills {
+    margin-bottom: 1rem;
+  }
+  .skills-input-label {
+    display: flex;
+  }
+  .skills-label {
+    width: 20%;
+    text-align: left;
+    margin: auto 0;
+  }
+  .skills-inputs {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* .add-style-btn {
+    margin-left: 0.3rem;
+    padding: 6px;
+  } */
+  
