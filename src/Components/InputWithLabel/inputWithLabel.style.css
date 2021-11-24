@@ -1,27 +1,26 @@
 .form-input {
-    width: 80%;
-    padding: 0.7rem 1rem;
-    outline: none;
-    border: 1.5px solid #dadada;
-    transition: border 0.3s ease;
-  }
-  .form-component {
-    margin-bottom: 1rem;
-  }
-  label {
-    width: 20%;
-    text-align: left;
-    margin: auto 0;
-  }
-  .form-field-error {
-    text-align: left;
-    margin-left: 19%;
-    color: red;
-    font-size: 14px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .input-label {
-    display: flex;
-  }
-  
+  width: 80%;
+  padding: 0.7rem 1rem;
+  outline: none;
+  border: 1.5px solid #dadada;
+  transition: border 0.3s ease;
+}
+.form-component {
+  margin-bottom: 1rem;
+}
+label {
+  width: 20%;
+  text-align: left;
+  margin: auto 0;
+}
+.form-field-error {
+  text-align: left;
+  margin-left: 19%;
+  color: red;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-label {
+  display: flex;
+}

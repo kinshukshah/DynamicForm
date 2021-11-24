@@ -9,9 +9,11 @@ export const useValidateForms = (data) => {
     contact: "",
     success: "",
   });
+  // Below function string contains number taken from stack overflow
   const stringContainsNumber = (text) => {
     return /\d/.test(text);
   };
+
   const validateNameField = (name) => {
     if (name === "") {
       return { success: false, errorMsg: "Name Field is Required" };
@@ -21,14 +23,15 @@ export const useValidateForms = (data) => {
     }
     return { success: true };
   };
+
   const validateSkillsField = (skills) => {
-    console.log(skills);
     for (let i = 0; i < skills.length; i++) {
       if (skills[i] === "")
         return { success: false, errorMsg: "Skill Field Cannot be empty" };
     }
     return { success: true };
   };
+
   const validateContactField = (contacts) => {
     for (let i = 0; i < contacts.length; i++) {
       if (contacts[i].type === "" || contacts[i].number === "") {
@@ -50,6 +53,7 @@ export const useValidateForms = (data) => {
     }
     return { success: true };
   };
+
   const checkNoErrors = (tempErr) => {
     let errArr = Object.keys(tempErr);
     for (let i = 0; i < errArr.length; i++) {
@@ -59,6 +63,7 @@ export const useValidateForms = (data) => {
     }
     return true;
   };
+
   const validateForm = (data) => {
     let tempError = {
       name: "",

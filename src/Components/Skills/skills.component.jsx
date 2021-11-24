@@ -8,6 +8,7 @@ export const Skills = ({
   errors,
   setErrors,
 }) => {
+
   const handleAddSkill = () => {
     const totaLen = Object.keys(skillsObj).length;
     setSkillsObj((skill) => ({
@@ -15,6 +16,7 @@ export const Skills = ({
       [`skill${totaLen + 1}`]: "",
     }));
   };
+
   const handleSkillsOnChange = (e) => {
     if (errors.skills !== "") {
       setErrors((err) => ({ ...err, skills: "" }));
@@ -24,6 +26,7 @@ export const Skills = ({
       [e.target.name]: e.target.value,
     }));
   };
+  
   return (
     <div className="skills">
       <div className="skills-input-label">

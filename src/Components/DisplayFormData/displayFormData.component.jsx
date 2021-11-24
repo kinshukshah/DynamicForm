@@ -9,7 +9,6 @@ export const DisplayFormData = () => {
     <>
       <CustomBtn
         label={viewData ? "Close View Data" : "View Data"}
-        inverse
         style={{ width: "15%", margin: "1rem 0" }}
         onClick={() => setViewData((data) => !data)}
       />
@@ -75,7 +74,6 @@ export const DisplayFormData = () => {
           <CustomBtn
             style={{ width: "15%", margin: "1rem 0" }}
             label="Download JSON"
-            inverse
           />
         </a>
       )}

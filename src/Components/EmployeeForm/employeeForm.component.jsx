@@ -36,11 +36,14 @@ export const EmployeeForm = () => {
       ...employeeDetails,
       Contact: Object.values(contactObj),
       skills: Object.values(skillsObj),
-      dob: `${new Date(employeeDetails.dob).getDate()}-${new Date(
-        employeeDetails.dob
-      ).toLocaleDateString(undefined, { month: "short" })}-${new Date(
-        employeeDetails.dob
-      ).getFullYear()}`,
+      dob:
+        employeeDetails.dob === ""
+          ? ""
+          : `${new Date(employeeDetails.dob).getDate()}-${new Date(
+              employeeDetails.dob
+            ).toLocaleDateString(undefined, { month: "short" })}-${new Date(
+              employeeDetails.dob
+            ).getFullYear()}`,
     };
     const isValid = validateForm(data);
     if (isValid.success) {
@@ -97,7 +100,6 @@ export const EmployeeForm = () => {
         label="Add Employee"
         onClick={handleSubmit}
         style={{ width: "20%" }}
-        inverse
       />
     </form>
   );
